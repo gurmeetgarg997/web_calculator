@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator | Python</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h1>Calculator</h1>
+    <p class="subtitle">Python-powered Web Calculator</p>
+
+    <form method="post">
+        <div class="row">
+            <input type="number" step="any" name="num1" placeholder="First number" required>
+        </div>
+
+        <div class="row">
+            <select name="operation">
+                <option value="+">Addition (+)</option>
+                <option value="-">Subtraction (−)</option>
+                <option value="*">Multiplication (×)</option>
+                <option value="/">Division (÷)</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <input type="number" step="any" name="num2" placeholder="Second number" required>
+        </div>
+
+        <button type="submit">Calculate</button>
+    </form>
+
+    <div class="result">
+        Result: <span>{{ result }}</span>
+    </div>
+</div>
+
+</body>
+</html>

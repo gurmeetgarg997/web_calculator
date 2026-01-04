@@ -1,0 +1,81 @@
+/* UX Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+/* Page Layout */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Design (UI Pattern) */
+.card {
+    background: #020617;
+    width: 320px;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    text-align: center;
+    color: white;
+}
+
+/* Headings */
+h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #0f172a;
+    color: white;
+    font-size: 15px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #22d3ee;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #38bdf8;
+}
+
+/* Result Highlight (UX feedback) */
+.result {
+    margin-top: 18px;
+    font-size: 16px;
+}
+
+.result span {
+    font-weight: bold;
+    color: #22d3ee;
+}
+
+<link rel="stylesheet" href="/static/style.css">
